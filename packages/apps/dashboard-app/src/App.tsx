@@ -1,9 +1,6 @@
 import React, { Suspense, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-// import FlorApp  from 'flor-app';
-
-const OtherComponent = React.lazy(() => import('flor-app'));
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,12 +10,14 @@ function App() {
     <div className="App">
       <header className="App-header">
         HEADER
+        <ul>
+          <li>Drones</li>
+          <li>Mapas</li>
+          <li>Paises</li>
+        </ul>
       </header>
       <main className='App-main'>
-        {/* <ExternalApp /> */}
-        <Suspense fallback={<div>Loading...</div>}>
-          <OtherComponent />
-        </Suspense>
+        MAIN
       </main>
       <footer className="App-footer">
         FOOTER

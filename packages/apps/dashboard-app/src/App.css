@@ -25,6 +25,10 @@
   color: white;
 }
 
+.App-header ul {
+  display: flex;
+}
+
 .App-main {
   flex: 1;
 }

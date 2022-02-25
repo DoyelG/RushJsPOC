@@ -450,10 +450,10 @@
       "packageName": "@airmap/map-lib",
       "projectFolder": "packages/libs/map-lib"
     },
-    {
-      "packageName": "@airmap/slider-lib",
-      "projectFolder": "packages/libs/slider-lib"
-    },
+    // {
+    //   "packageName": "@airmap/slider-lib",
+    //   "projectFolder": "packages/libs/slider-lib"
+    // },
     {
       "packageName": "@airmap/website",
       "projectFolder": "packages/apps/website-app"
