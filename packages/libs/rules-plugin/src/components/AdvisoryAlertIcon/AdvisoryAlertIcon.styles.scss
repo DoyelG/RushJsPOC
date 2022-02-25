@@ -1,0 +1,46 @@
+@import 'RulesPlugin.variables';
+
+.alert-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: $neutral4-color;
+  flex-shrink: 0;
+  & svg {
+    vertical-align: middle;
+    color: $neutral3-color;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.alert-icon_red {
+  background-color: rgba($advisories-red-color, 0.2);
+  & svg {
+    color: $advisories-red-color;
+  }
+}
+
+.alert-icon_orange {
+  background-color: rgba($advisories-orange-color, 0.2);
+  & svg {
+    color: $advisories-orange-color;
+  }
+}
+
+.alert-icon_yellow {
+  background-color: rgba($advisories-yellow-color, 0.2);
+  & svg {
+    color: $advisories-yellow-color;
+  }
+}
+
+.alert-icon_green {
+  background-color: rgba($advisories-green-color, 0.2);
+  & svg {
+    color: $advisories-green-color;
+  }
+}

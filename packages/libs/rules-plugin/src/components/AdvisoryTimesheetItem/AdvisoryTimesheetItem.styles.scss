@@ -1,0 +1,19 @@
+@import 'RulesPlugin.variables';
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  color: $neutral1-color;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.inactive-advisory {
+  color: rgba($neutral1-color, 0.5);
+}

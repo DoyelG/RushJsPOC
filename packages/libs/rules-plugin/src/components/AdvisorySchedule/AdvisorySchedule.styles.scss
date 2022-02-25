@@ -1,0 +1,13 @@
+@import 'RulesPlugin.variables';
+
+.schedule-wrapper {
+  padding: 0;
+  margin: 1em 0;
+}
+
+.schedule-date-range {
+  color: $neutral1-color;
+  margin: 25px 0 15px;
+  font-weight: bold;
+  list-style-type: none;
+}

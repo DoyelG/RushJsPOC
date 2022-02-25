@@ -1,0 +1,57 @@
+@import 'globals/variables';
+
+.ruleset-item {
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+
+  &:hover {
+    background-color: $neutral5-color;
+  }
+
+  &.ruleset-item--active {
+    background-color: $neutral4-color;
+  }
+}
+
+.ruleset-text {
+  max-width: 100%;
+  padding-right: 20px;
+}
+
+.ruleset-info-button {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  line-height: 0;
+  cursor: pointer;
+  color: rgba($neutral0-color, 0.6);
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: rgba($neutral0-color, 0.7);
+  }
+}
+
+.ruleset-type {
+  font-size: 14px;
+  color: $primary-color;
+  margin: 10px 0;
+  font-weight: lighter;
+}
+
+.ruleset-name {
+  font-size: 14px;
+  margin: 0;
+}
+
+.ruleset-description {
+  font-size: 12px;
+  font-weight: lighter;
+  margin: 0;
+  color: $neutral3-color;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

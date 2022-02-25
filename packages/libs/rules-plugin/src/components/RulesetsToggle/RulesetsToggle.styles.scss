@@ -1,0 +1,15 @@
+@import 'globals/variables';
+
+.toggle_button {
+  padding: 5px;
+  border-radius: 4px 0 0 4px;
+  background-color: #fff;
+  height: 43px;
+  width: 43px;
+}
+
+.toggleable_menu {
+  position: absolute;
+  right: 0;
+  top: 212px;
+}

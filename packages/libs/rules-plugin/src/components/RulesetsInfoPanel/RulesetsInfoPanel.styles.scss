@@ -1,0 +1,59 @@
+@import 'globals/variables';
+
+.rules-info-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  position: relative;
+  min-height: 100px;
+}
+
+.rules-info-header-wrapper {
+  position: absolute;
+  right: 5px;
+  top: -10px;
+}
+
+.rules-info-list-wrapper {
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-button {
+  border-radius: 50%;
+  padding: 1px;
+}
+
+.ruleset-name {
+  font-weight: normal;
+  font-size: 16px;
+  margin: 0;
+  padding-top: 15px;
+}
+
+.ruleset-description {
+  font-weight: normal;
+  font-size: 14px;
+  padding: 8px 0;
+  color: $neutral3-color;
+  margin: 0;
+}
+
+.ruleset-info-text {
+  box-shadow: rgba($neutral0-color, 0.12) 0px 1px 6px, rgba($neutral0-color, 0.12) 0px 1px 4px;
+  border-radius: 2px;
+  margin-bottom: 5px;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.no-ruleset-info-text {
+  padding: 20px 5px;
+}
+
+.ruleset-info-container {
+  word-break: break-word;
+}

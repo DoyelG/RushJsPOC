@@ -1,0 +1,29 @@
+@import 'globals/variables';
+
+.rules-plugin-container {
+  font-family: $font-family, $fallback-font-family;
+}
+
+.rules-plugin-header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  z-index: 4;
+
+  &.top-right {
+    top: 20px;
+    right: 10px;
+    left: auto;
+  }
+
+  &.top-left {
+    top: 20px;
+    right: auto;
+    left: 10px;
+  }
+}
+
+.advisories-rulesets-menu-wrapper {
+  display: flex;
+  position: relative;
+}

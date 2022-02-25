@@ -1,0 +1,88 @@
+@import 'RulesPlugin.variables';
+
+.advisories-header-wrapper {
+  display: flex;
+  align-items: center;
+  align-content: stretch;
+  cursor: pointer;
+}
+
+.advisories-header-text {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgba($neutral1-color, 0.5);
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.advisories-header-count {
+  margin: 0 5px;
+}
+
+.advisories-menu-wrapper {
+  width: 100%;
+  height: 42px;
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  background-color: $neutral6-color;
+  padding: 0;
+  border-radius: 0 6px 6px 0;
+  border: solid 1px $border_gray-color;
+  overflow-y: hidden;
+  box-shadow: unset;
+}
+
+.card-header {
+  padding: 0 10px;
+  min-width: 250px;
+  cursor: pointer;
+}
+
+.arrow-icon {
+  font-size: 16px;
+  color: rgba($neutral1-color, 0.5);
+  cursor: pointer;
+}
+
+.alert-icon {
+  margin-right: 10px;
+}
+
+.zoom-in-message-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.zoom-in-message {
+  font-size: 11px;
+}
+
+.collapse {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  width: auto;
+  top: 100%;
+  margin-top: 5px;
+  right: 0;
+  left: 0;
+  min-width: 100%;
+
+  & > div {
+    max-width: 350px;
+    width: 100%;
+  }
+}
+
+.menu-content {
+  max-height: 300px;
+  overflow: auto;
+  pointer-events: auto;
+  border: 1px solid $border_gray-color;
+  box-shadow: 0 8px 10px 0 rgba($neutral2-color, 0.2);
+  border-radius: 8px;
+  background-color: $neutral6-color;
+}

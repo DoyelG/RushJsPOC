@@ -1,0 +1,109 @@
+@import 'RulesPlugin.variables';
+
+.detail-wrapper {
+  padding: 10px;
+
+  &:not(:last-child) {
+    border-bottom: 2px solid $neutral4-color;
+  }
+
+  display: flex;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.warnings {
+  min-width: 45px;
+
+  .warning-pill {
+    display: block;
+    height: fit-content;
+    padding: 0px 10px;
+    margin: 0 auto;
+    border-radius: 12px;
+    color: whitesmoke;
+    text-align: center;
+  }
+}
+.detail-content {
+  flex-grow: 1;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.advisory-title {
+  margin: 0;
+  color: $neutral1-color;
+  font-size: 1em;
+}
+
+.selected-advisory {
+  background-color: $lighter-color;
+}
+
+.active-text {
+  color: $primary-color;
+  font-weight: bold;
+  margin: 0;
+}
+
+.advisory-text {
+  margin: 0;
+  color: $neutral1-color;
+  font-size: 1em;
+}
+
+.schedule-button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.collapse-icon {
+  margin-left: 10px;
+  transform: rotate(90deg);
+  transition: rotate 300ms ease;
+}
+
+.collapse-icon-expanded {
+  transform: rotate(-90deg);
+}
+
+.offset-banner {
+  height: auto;
+  background-color: $light_gray-color;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  padding: 3px 1px;
+
+  & span {
+    white-space: normal;
+    padding: 5px 12px;
+  }
+}
+
+.collapse-schedule-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px;
+  cursor: pointer;
+  border: 1px solid rgba($neutral1-color, 0.5);
+  border-radius: 4px;
+  margin-right: 10px;
+  color: rgba($neutral1-color, 0.5);
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 14px;
+  outline: none;
+  margin: 10px 0;
+
+  & svg {
+    color: rgba($neutral1-color, 0.5);
+    vertical-align: middle;
+  }
+
+  & svg:first-child {
+    margin-right: 3px;
+  }
+}

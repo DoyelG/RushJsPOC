@@ -1,0 +1,63 @@
+@import 'RulesPlugin.variables';
+
+.advisory-count {
+  margin-left: 8px;
+}
+
+.list-item-wrapper {
+  &:not(:first-child) {
+    margin-top: 1px;
+  }
+}
+
+.advisory-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 12px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.right-toggle {
+  display: flex;
+  cursor: pointer;
+}
+
+.red-background {
+  background-color: $advisories-red-color;
+}
+
+.orange-background {
+  background-color: $advisories-orange-color;
+}
+
+.yellow-background {
+  background-color: $advisories-yellow-color;
+}
+
+.green-background {
+  background-color: $advisories-green-color;
+}
+
+.red-border {
+  border-bottom: 1px solid $advisories-red-color;
+}
+
+.orange-border {
+  border-bottom: 1px solid $advisories-orange-color;
+}
+
+.yellow-border {
+  border-bottom: 1px solid $advisories-yellow-color;
+}
+
+.green-border {
+  border-bottom: 1px solid $advisories-green-color;
+}
+
+.default-bg {
+  background-color: $neutral6-color;
+}

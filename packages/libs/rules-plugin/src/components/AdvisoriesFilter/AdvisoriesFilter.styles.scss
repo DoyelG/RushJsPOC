@@ -1,0 +1,143 @@
+@import 'RulesPlugin.variables';
+
+.open-button {
+  height: 42px;
+  border: solid 1px $border_gray-color;
+  border-left: 0;
+  border-radius: 6px;
+  padding: 8px;
+  background-color: $neutral6-color;
+  margin-right: 5px;
+
+  &:hover {
+    background-color: $neutral6-color !important;
+  }
+}
+
+.advisories-filter-wrapper {
+  min-width: 400px;
+}
+
+.applied-filter-chip {
+  display: flex;
+  align-items: center;
+  height: auto;
+  text-transform: capitalize;
+  font-size: 12px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: rgba($neutral1-color, 0.5);
+  border-radius: 10px;
+  padding: 3px 1px;
+  background-color: $light_gray-color;
+
+  & svg {
+    height: 16px;
+    width: 16px;
+    margin: 0 5px;
+    color: $neutral3-color;
+  }
+
+  & span {
+    padding: 0 12px 0 0;
+  }
+}
+
+.chip-active {
+  color: $neutral6-color;
+  background-color: $primary-color;
+
+  & svg {
+    color: $neutral6-color;
+  }
+}
+
+.title {
+  margin: 0;
+  padding: 16px;
+}
+
+.tab {
+  text-transform: capitalize;
+  flex-grow: 1;
+  color: rgba($neutral1-color, 0.5);
+}
+
+.selected-tab {
+  color: $neutral1-color;
+}
+
+.show-inactive-advisories-wrapper {
+  padding: 20px 30px;
+  display: flex;
+}
+
+.show-inactive-advisories-text {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: rgba($neutral3-color, 0.5);
+    margin-right: 10px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: solid 1px $neutral3-color;
+  }
+}
+
+.disclaimer-wrapper {
+  padding: 20px 30px;
+  background-color: $neutral5-color;
+}
+
+.disclaimer-title {
+  color: rgba($neutral1-color, 0.5);
+  margin: 0;
+}
+
+.disclaimer-body {
+  color: rgba($neutral1-color, 0.5);
+  margin: 0;
+  font-size: 14;
+}
+
+.footer {
+  border-top: 1px solid $light_gray-color;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.footer-right {
+  display: flex;
+}
+
+.button {
+  font-size: 14px !important;
+  margin-right: 20px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.switch-checked {
+  background-color: $neutral6-color;
+}
+
+.popover-body {
+  border-radius: 6px;
+  margin-top: 5px;
+}
+
+.divider {
+  margin: 0;
+  height: 1px;
+  border: none;
+  background-color: $neutral4-color;
+}

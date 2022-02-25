@@ -1,0 +1,91 @@
+@import 'globals/variables';
+
+.rules-icon {
+  background-color: $neutral6-color;
+  border-radius: 6px 0 0 6px;
+  border: solid 1px $neutral4-color;
+  padding: 0 5px;
+  height: 42px;
+  pointer-events: auto;
+
+  &:hover {
+    background-color: $neutral6-color;
+  }
+
+  &.isolated-icon {
+    border-radius: 6px;
+  }
+}
+
+.rulesets-menu-header {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.collapse-wrapper {
+  background-color: $neutral6-color;
+  box-shadow: 0 8px 10px 0 rgba($neutral2-color, 0.2);
+  border-radius: 6px;
+}
+
+.collapse {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  width: auto;
+  top: 100%;
+  right: 0;
+  left: 0;
+  min-width: 100%;
+  margin-top: 5px;
+
+  &.isolated-menu {
+    min-width: 300px;
+  }
+
+  & > div {
+    max-width: 350px;
+    width: 100%;
+  }
+}
+
+.jurisdictions-card-content {
+  padding: 0;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.jurisdiction-wrapper {
+  padding: 0 15px;
+  flex: 1;
+  z-index: 2;
+  max-height: 300px;
+  overflow-y: auto;
+
+  &:last-child {
+    padding-bottom: 15px;
+  }
+}
+
+.jurisdiction-rulesets {
+  padding-bottom: 10px;
+  border-bottom: 1px solid $neutral4-color;
+  &:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+.jurisdiction-title {
+  font-size: 16px;
+  font-weight: lighter;
+  margin: 15px 0 10px;
+}
+
+.jurisdiction-wrapper-small {
+  max-height: 150px;
+}

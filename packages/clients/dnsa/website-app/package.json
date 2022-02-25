@@ -1,5 +1,5 @@
 {
-  "name": "@airmap/website",
+  "name": "@zarco/website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,7 +16,8 @@
     "typescript": "^4.5.5",
     "web-vitals": "^2.1.4",
     "@airmap/map-lib": "workspace:1.0.0",
-    "@airmap/rules-plugin": "workspace:*"
+    "@airmap/rules-plugin": "workspace:*",
+    "@airmap/website": "workspace:*"
   },
   "scripts": {
     "start": "react-scripts start",

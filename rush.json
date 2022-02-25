@@ -176,7 +176,7 @@
    * and set projectFolderMaxDepth to a large number.
    */
   // "projectFolderMinDepth": 2,
-  "projectFolderMaxDepth": 3,
+  "projectFolderMaxDepth": 5,
 
   /**
    * Today the npmjs.com registry enforces fairly strict naming rules for packages, but in the early
@@ -447,6 +447,10 @@
     // },
     // 
     {
+      "packageName": "@airmap/rules-plugin",
+      "projectFolder": "packages/libs/rules-plugin"
+    },
+    {
       "packageName": "@airmap/map-lib",
       "projectFolder": "packages/libs/map-lib"
     },
@@ -461,6 +465,10 @@
     {
       "packageName": "@airmap/dashboard",
       "projectFolder": "packages/apps/dashboard-app"
+    },
+    {
+      "packageName": "@zarco/website",
+      "projectFolder": "packages/clients/zarco/website-app"
     }
   ]
 }

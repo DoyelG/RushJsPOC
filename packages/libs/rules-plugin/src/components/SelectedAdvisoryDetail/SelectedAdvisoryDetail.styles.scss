@@ -1,0 +1,103 @@
+@import 'RulesPlugin.variables';
+
+.detail-wrapper {
+  padding: 10px;
+
+  &:not(:last-child) {
+    border-bottom: 2px solid $neutral4-color;
+  }
+
+  display: flex;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.detail-content {
+  flex-grow: 1;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.external-link {
+  color: rgba($neutral1-color, 0.5);
+}
+
+.advisory-title {
+  margin: 0;
+  color: $neutral1-color;
+  font-size: 1em;
+}
+
+.advisory-text {
+  margin: 0;
+  color: $neutral1-color;
+  font-size: 1em;
+}
+
+.inactive-color {
+  color: rgba($neutral1-color, 0.5);
+}
+
+.collapse-schedule-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px;
+  cursor: pointer;
+  border: 1px solid rgba($neutral1-color, 0.5);
+  border-radius: 4px;
+  margin-right: 10px;
+  color: rgba($neutral1-color, 0.5);
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 14px;
+  outline: none;
+
+  & svg {
+    color: rgba($neutral1-color, 0.5);
+    vertical-align: middle;
+  }
+
+  & svg:first-child {
+    margin-right: 3px;
+  }
+}
+
+.schedule-button-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.collapse-icon {
+  margin-left: 10px;
+  transform: rotate(90deg);
+  transition: rotate 300ms ease;
+}
+
+.collapse-icon-expanded {
+  transform: rotate(-90deg);
+}
+
+.active-text {
+  color: $primary-color;
+  font-weight: bold;
+}
+
+.selected-advisory {
+  background-color: $lighter-color;
+}
+
+.offset-banner {
+  margin-top: 10px;
+  height: auto;
+  background-color: $light_gray-color;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  padding: 3px 1px;
+
+  & span {
+    white-space: normal;
+    padding: 5px 12px;
+  }
+}

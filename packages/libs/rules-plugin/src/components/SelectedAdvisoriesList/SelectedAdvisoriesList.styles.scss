@@ -1,0 +1,127 @@
+@import 'RulesPlugin.variables';
+
+.list-wrapper {
+  position: fixed;
+  bottom: 40px;
+  left: 300px;
+  width: 350px;
+  border-radius: 6px;
+  border: 1px solid $neutral4-color;
+  box-shadow: 0 8px 10px 0 rgba($neutral2-color, 0.2);
+  pointer-events: auto;
+  z-index: 1;
+
+  & > div:last-child {
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+}
+
+.header-list {
+  width: 100%;
+  background-color: $neutral2-color;
+  color: $neutral6-color;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 10px;
+  box-sizing: border-box;
+}
+
+.header-list-title {
+  margin: 0;
+}
+
+.close-button {
+  border-radius: 50%;
+  background-color: $neutral6-color;
+  border-color: $neutral6-color;
+  line-height: 0;
+  color: $neutral2-color;
+  cursor: pointer;
+  padding: 3px;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: $neutral4-color;
+  }
+}
+
+.section {
+  width: 100%;
+  background-color: $neutral6-color;
+}
+
+.header-section {
+  color: rgba($neutral1-color, 0.5);
+  border-bottom: 2px solid $neutral4-color;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.section-title {
+  text-transform: uppercase;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.inactive-section {
+  background-color: $neutral5-color;
+  border-top: 2px solid $neutral4-color;
+}
+
+.applied-filter-chip {
+  display: flex;
+  align-items: center;
+  height: auto;
+  text-transform: capitalize;
+  font-size: 12px;
+  margin-left: 10px;
+  color: rgba($neutral1-color, 0.5);
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 0 10px;
+  background-color: $light_gray-color;
+}
+
+.applied-value {
+  display: flex;
+}
+
+.loader-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 150px;
+}
+
+.inactive-advisories-hidden {
+  padding: 20px;
+}
+
+.inactive-paragraph {
+  margin: 0;
+  text-align: center;
+  color: rgba($neutral1-color, 0.5);
+  font-size: 12px;
+}
+
+.show-inactive-link {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.active-advisories-wrapper {
+  max-height: 300px;
+  overflow: auto;
+}
+
+.inactive-advisories-wrapper {
+  max-height: 200px;
+  overflow: auto;
+}
+
+.advisories-wrapper--small {
+  max-height: 200px;
+}

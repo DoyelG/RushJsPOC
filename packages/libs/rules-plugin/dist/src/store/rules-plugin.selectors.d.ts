@@ -1,0 +1,27 @@
+export function createRulesPluginSelectors(rulesPluginStoreSliceIds: any): {
+    getClassifiedLayersStyles: (state: any) => any;
+    getMapJurisdictions: (state: any) => any;
+    getSelectedAdvisory: (state: any) => any;
+    getClickedAdvisories: (state: any) => any;
+    getIsFetchingClickedAdvisories: (state: any) => any;
+    getAdvisoriesData: (state: any) => any;
+    getAdvisoriesCounter: (state: any) => any;
+    getMapBoundsGeometry: (state: any) => any;
+    getSelectedRulesets: (state: any) => any;
+    getIsMapPartiallyOverUnavailableJurisdiction: (state: any) => any;
+    getRulesetInformation: (state: any) => any;
+    getIsFetchingRulesetInformation: (state: any) => any;
+    getAppliedAdvisoriesFilter: (state: any) => any;
+    getShouldShowInactiveAdvisories: (state: any) => any;
+    getLocationName: (state: any) => any;
+    getLocationWeather: (state: any) => any;
+    getZoomLevel: (state: any) => any;
+    getHighlightedLayer: (state: any) => any;
+    getUnclassifiedLayersStyles: any;
+    getRulesets: any;
+    getRulesetsIds: any;
+    getSelectedRulesetsBySource: any;
+    getVisibleRulesetsIds: any;
+    getParsedRulesetInformation: any;
+    getMapBoundsGeometryCenter: any;
+};

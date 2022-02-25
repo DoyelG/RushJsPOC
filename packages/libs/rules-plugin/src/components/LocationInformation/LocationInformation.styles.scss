@@ -1,0 +1,60 @@
+@import 'RulesPlugin.variables';
+
+.highlight-background {
+  display: inline-block;
+  padding: 0 5px;
+  background: rgba($neutral6-color, 0.75);
+  font-weight: 100;
+  color: #6f6f6f;
+}
+
+.coordinates {
+  font-size: 20px;
+  margin: 0;
+  display: block;
+}
+
+.location {
+  font-size: 28px;
+  line-height: 1em;
+  margin: 0 0 10px 0;
+}
+
+.welcome-header-wrapper {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  z-index: 10;
+  bottom: 10px;
+  max-width: 450px;
+  right: 10px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  pointer-events: none;
+}
+
+.welcome-title {
+  margin: 0 10px 0 0;
+  text-align: right;
+}
+
+.weather-wrapper {
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: $neutral6-color;
+  font-size: 24px;
+  height: 100%;
+  text-align: center;
+  padding: 5px;
+  pointer-events: auto;
+}
+
+.weather-icon {
+  color: $primary-color;
+}
+
+.weather-text {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  color: $primary-color;
+}
